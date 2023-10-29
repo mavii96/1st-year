@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+	
+	char transactionType;
+	int bankBalance,newBalance,amount;
+	
+	printf("Enter Your Account Balance :");
+	scanf("%d",&bankBalance);
+	
+	printf("Enter the Transaction Type : ");
+	transactionType =  getchar();
+	
+	
+	
+	 if (transactionType= 'D' || 'd')
+	{
+	printf("You have selected to Diposit money");
+		
+	printf("\nEnter The Transaction Amount : ");
+	scanf("%d",&amount);
+	
+	newBalance = bankBalance+ amount ;
+	
+	}else 
+	{
+		printf("Invalid Transaction Method !");
+	}
+	
+	printf("Transaction Completed !\n\nAccount Balance %d",newBalance);
+	
+	return 0;
+}
